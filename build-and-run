@@ -3,10 +3,9 @@
 docker build -t typescript-npm docker
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-NOTEBOOKS=$DIR/notebooks
 
 docker run -it \
-  --mount type=bind,source=${NOTEBOOKS},target=/home/jupyter/notebooks \
+  --mount type=bind,source=${DIR},target=/home/jupyter/notebooks \
   -p 8888:8888 \
   typescript-npm \
   bash -c "jupyter lab --ip=0.0.0.0 --no-browser"
