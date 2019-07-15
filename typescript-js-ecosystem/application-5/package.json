@@ -1,0 +1,10 @@
+{
+  "name": "application-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/lodash": "^4.14.136",
+    "typescript": "^3.5.3"
+  }
+}
