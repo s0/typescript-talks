@@ -24,5 +24,9 @@ RUN npm install -g itypescript
 USER jupyter
 RUN its --install=local
 
+# Other NPM packages
+USER root
+RUN npm install -g json
+
 USER jupyter
 WORKDIR /home/jupyter/notebooks
