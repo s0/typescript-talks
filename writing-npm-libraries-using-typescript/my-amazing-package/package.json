@@ -1,0 +1,7 @@
+{
+  "name": "my-amazing-package",
+  "version": "0.0.1",
+  "dependencies": {
+    "typescript": "^3.5.3"
+  }
+}
