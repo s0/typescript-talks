@@ -11,18 +11,18 @@ RUN chown jupyter:jupyter ~jupyter
 USER jupyter
 RUN mkdir ~jupyter/notebooks
 
-# Typescript Kernel Stuff
+# Bash Kernel
+USER root
+RUN pip3 install bash_kernel
+RUN python3 -m bash_kernel.install
+
+# Typescript Kernel
 USER root
 RUN apt-get -y install nodejs npm
 RUN apt-get -y install git
+RUN npm install -g itypescript
 USER jupyter
-WORKDIR /home/jupyter
-RUN git clone https://github.com/idantene/itypescript.git
-WORKDIR /home/jupyter/itypescript
-RUN git checkout fix-for-notebook
-RUN npm install
-RUN npm run tsc
-RUN ./bin/itypescript.js --install=local
+RUN its --install=local
 
 USER jupyter
 WORKDIR /home/jupyter/notebooks
