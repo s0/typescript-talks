@@ -1,0 +1,12 @@
+#! /bin/bash
+
+docker build -t typescript-npm docker
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+rm -rf my-amazing-package
+
+docker run -it \
+  --mount type=bind,source=${DIR},target=/home/jupyter/notebooks \
+  typescript-npm \
+  bash -c "jupyter nbconvert --to notebook --inplace --execute Lesson.ipynb --allow-errors"
