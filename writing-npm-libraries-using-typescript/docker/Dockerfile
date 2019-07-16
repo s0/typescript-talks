@@ -29,4 +29,6 @@ USER root
 RUN npm install -g json
 
 USER jupyter
+RUN git config --global user.email "demo@example.com"
+RUN git config --global user.name "Jupyter Demo"
 WORKDIR /home/jupyter/notebooks
