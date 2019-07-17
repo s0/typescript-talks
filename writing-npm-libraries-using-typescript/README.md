@@ -2,13 +2,12 @@ This directory contains content used in my OSCON talk
 [Writing npm (JavaScript) libraries using TypeScript](https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/75953).
 
 This folder is designed to be used as a Jupyter notebook,
-and can be 
+and can also just be followed along using a text editor and terminal.
 
 ## Doing the lesson from scratch
 
-Instead of running the notebook,
-you can just use your favourite editor and terminal,
-and follow the instructions in [Lesson.ipynb](Lesson.ipynb)
+If you want to just use your favourite editor and terminal,
+just follow the instructions in [Lesson.ipynb](Lesson.ipynb)
 (which you can just open and view on GitHub).
 
 ## Running the notebook
