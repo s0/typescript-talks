@@ -1,4 +1,4 @@
-import { Broadcaster } from './broadcast';
+import { Broadcaster } from '../../util/core/broadcast';
 
 export const notifications = new Broadcaster();
 
