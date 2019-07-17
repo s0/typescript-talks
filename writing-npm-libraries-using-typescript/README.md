@@ -8,7 +8,8 @@ and can be
 
 Instead of running the notebook,
 you can just use your favourite editor and terminal,
-and follow the instructions in [Lesson.ipynb](Lesson.ipynb).
+and follow the instructions in [Lesson.ipynb](Lesson.ipynb)
+(which you can just open and view on GitHub).
 
 ## Running the notebook
 
