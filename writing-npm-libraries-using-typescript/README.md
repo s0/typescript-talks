@@ -1,6 +1,8 @@
 This directory contains content used in my OSCON talk
 [Writing npm (JavaScript) libraries using TypeScript](https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/75953).
 
+Video: https://www.youtube.com/watch?v=m6Jr6w0W1xw
+
 This folder is designed to be used as a Jupyter notebook,
 and can also just be followed along using a text editor and terminal.
 
