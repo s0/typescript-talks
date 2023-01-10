@@ -1,4 +1,4 @@
-const m1 = require('./some-library-module');
+import * as m1 from './some-library-module';
 
 console.log(m1.addTogether(12));
 console.log(m1.addTogether('foo'));
