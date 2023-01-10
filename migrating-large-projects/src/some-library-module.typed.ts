@@ -1,9 +1,9 @@
 import { makePair } from './another-library-module';
 
 export const someAggregateFunction = <T>(value: T) => {
-  value = makePair(value);
-  value = addLengthToArray(value);
-  return getFirstAndLast(value);
+  const pair = makePair(value);
+  const pairAndLength = addLengthToArray(pair);
+  return getFirstAndLast(pairAndLength);
 }
 
 const addLengthToArray = <T>(value: T[]): (T | number)[] => {
