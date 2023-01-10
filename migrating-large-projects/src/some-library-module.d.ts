@@ -1,1 +1,3 @@
-export const addTogether: (value: number) => number;
+export const addTogether: <T extends number | string>(
+  value: T,
+) => T;
